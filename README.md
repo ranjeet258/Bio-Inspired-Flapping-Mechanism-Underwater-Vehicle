@@ -124,17 +124,11 @@ This project uses **Arduino C++** with **Adafruit PWM driver** and **RMCS2303 mo
 
 ---
 
-## 🧩 Hardware Components
-| Component | Specification / Function |
-|------------|---------------------------|
-| **Arduino UNO / Mega** | Main control unit |
-| **PCA9685** | 16-channel PWM driver for servo control |
-| **RMCS2303** | DC servo motor driver |
-| **Encoder Motors** | Feedback-based motor control |
-| **Linear Actuator** | Ballast control system |
-| **Servos (8x)** | Flapping fin actuation |
-| **Sensors** | IMU, Depth, Pressure, Temperature |
-| **Power Source** | 12V Li-ion battery pack |
+## 🤖 Machine Learning Optimization (My Role)
+As the **ML Engineer**, I optimized the fin motion parameters (frequency, amplitude, phase offset) to maximize thrust and efficiency:
+- **Model:** Trained an **XGBoost regression model** on 810 physical tank trial data points to predict thrust and power (R² 0.95).
+- **Optimization:** Ran a fine-grained grid search using the model, reducing physical testing time from months to hours.
+- **Deployment:** Deployed the validated optimal parameters as a static lookup table on the embedded controller.
 
 ---
 
@@ -145,6 +139,3 @@ This project uses **Arduino C++** with **Adafruit PWM driver** and **RMCS2303 mo
 - **Raspberry Pi / PC GUI** monitors data and allows manual or autonomous control.
 
 ---
-
-## 📸 Visuals
-
